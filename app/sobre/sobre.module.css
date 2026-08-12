@@ -1,0 +1,188 @@
+.head {
+  padding-block: 56px 40px;
+  border-bottom: 1px solid var(--line);
+}
+
+.title {
+  font-size: clamp(2.1rem, 5vw, 3.2rem);
+  max-width: 20ch;
+}
+
+.grid {
+  padding-block: 48px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 320px;
+  }
+}
+
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 66ch;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+
+.rail {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.railBlock h2 {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.principles {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.principles li {
+  padding-left: 20px;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.principles li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--signal-text);
+}
+
+.section {
+  padding-block: 56px;
+  border-top: 1px solid var(--line);
+}
+
+.sectionTitle {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 32px;
+}
+
+.expList {
+  display: flex;
+  flex-direction: column;
+}
+
+.expItem {
+  border-top: 1px solid var(--line);
+  padding-block: 26px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 780px) {
+  .expItem {
+    grid-template-columns: 200px 1fr;
+  }
+}
+
+.expPeriod {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.expRole {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+}
+
+.expOrg {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+
+.expBullets {
+  list-style: none;
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.expBullets li {
+  padding-left: 18px;
+  position: relative;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+.expBullets li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--signal-text);
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 720px) {
+  .skillsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.skillGroup h3 {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--cobalt);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.skillList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skillList li {
+  font-size: 0.85rem;
+  border: 1px solid var(--line-strong);
+  padding: 5px 10px;
+  color: var(--ink-soft);
+}
+
+.langRow {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.langItem {
+  font-size: 0.95rem;
+}
+
+.langItem strong {
+  font-family: var(--font-display);
+  display: block;
+  font-size: 1.1rem;
+}
